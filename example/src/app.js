@@ -64,10 +64,11 @@ var App = React.createClass({ // eslint-disable-line
   },
 
    /**
-   * When a suggest hasn't select yet
+   * When a suggest hasn't selected yet
+   * @param  {Object} suggest The suggest
    */
-  beforeSuggestSelect: function() {
-    console.log('beforeSuggestSelect'); // eslint-disable-line
+  beforeSuggestSelect: function(suggest) {
+    console.log('beforeSuggestSelect: ', suggest); // eslint-disable-line
   },
 
   /**
