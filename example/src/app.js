@@ -25,6 +25,7 @@ var App = React.createClass({ // eslint-disable-line
           onChange={this.onChange}
           onSuggestSelect={this.onSuggestSelect}
           onSuggestNoResults={this.onSuggestNoResults}
+          beforeSuggestSelect={this.beforeSuggestSelect}
           location={new google.maps.LatLng(53.558572, 9.9278215)}
           radius="20" />
       </div>
@@ -60,6 +61,13 @@ var App = React.createClass({ // eslint-disable-line
    */
   onSuggestSelect: function(suggest) {
     console.log(suggest); // eslint-disable-line
+  },
+
+   /**
+   * When a suggest hasn't select yet
+   */
+  beforeSuggestSelect: function() {
+    console.log('beforeSuggestSelect'); // eslint-disable-line
   },
 
   /**
