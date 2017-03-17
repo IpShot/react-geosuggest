@@ -342,6 +342,8 @@ class Geosuggest extends React.Component {
       userInput: suggest.label
     });
 
+    this.props.beforeSuggestSelect();
+
     if (suggest.location) {
       this.setState({ignoreBlur: false});
       this.props.onSuggestSelect(suggest);

@@ -662,6 +662,8 @@ var Geosuggest = function (_React$Component) {
         userInput: suggest.label
       });
 
+      _this.props.beforeSuggestSelect();
+
       if (suggest.location) {
         _this.setState({ ignoreBlur: false });
         _this.props.onSuggestSelect(suggest);
