@@ -32,6 +32,7 @@ exports.default = {
   queryDelay: _react2.default.PropTypes.number,
   googleMaps: _react2.default.PropTypes.object,
   onSuggestSelect: _react2.default.PropTypes.func,
+  beforeSuggestSelect: _react2.default.PropTypes.func,
   onFocus: _react2.default.PropTypes.func,
   onBlur: _react2.default.PropTypes.func,
   onChange: _react2.default.PropTypes.func,

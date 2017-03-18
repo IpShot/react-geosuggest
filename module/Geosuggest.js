@@ -74,9 +74,9 @@ var Geosuggest = function (_React$Component) {
     };
 
     _this.onAfterInputChange = function () {
-      if (!_this.state.isSuggestsHidden) {
-        _this.showSuggests();
-      }
+      // if (!this.state.isSuggestsHidden) {
+      _this.showSuggests();
+      // }
       _this.props.onChange(_this.state.userInput);
     };
 
@@ -133,6 +133,7 @@ var Geosuggest = function (_React$Component) {
       }
 
       _this.setState({
+        activeSuggest: null,
         isSuggestsHidden: true,
         userInput: suggest.label
       });

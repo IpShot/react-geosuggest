@@ -23,6 +23,7 @@ exports.default = {
   googleMaps: null,
   onActivateSuggest: function onActivateSuggest() {},
   onSuggestSelect: function onSuggestSelect() {},
+  beforeSuggestSelect: function beforeSuggestSelect() {},
   onSuggestNoResults: function onSuggestNoResults() {},
   onFocus: function onFocus() {},
   onBlur: function onBlur() {},

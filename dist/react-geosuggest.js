@@ -599,9 +599,9 @@ var Geosuggest = function (_React$Component) {
     };
 
     _this.onAfterInputChange = function () {
-      if (!_this.state.isSuggestsHidden) {
-        _this.showSuggests();
-      }
+      // if (!this.state.isSuggestsHidden) {
+      _this.showSuggests();
+      // }
       _this.props.onChange(_this.state.userInput);
     };
 
@@ -658,6 +658,7 @@ var Geosuggest = function (_React$Component) {
       }
 
       _this.setState({
+        activeSuggest: null,
         isSuggestsHidden: true,
         userInput: suggest.label
       });
@@ -1114,6 +1115,7 @@ exports.default = {
   googleMaps: null,
   onActivateSuggest: function onActivateSuggest() {},
   onSuggestSelect: function onSuggestSelect() {},
+  beforeSuggestSelect: function beforeSuggestSelect() {},
   onSuggestNoResults: function onSuggestNoResults() {},
   onFocus: function onFocus() {},
   onBlur: function onBlur() {},
@@ -1402,6 +1404,7 @@ exports.default = {
   queryDelay: _react2.default.PropTypes.number,
   googleMaps: _react2.default.PropTypes.object,
   onSuggestSelect: _react2.default.PropTypes.func,
+  beforeSuggestSelect: _react2.default.PropTypes.func,
   onFocus: _react2.default.PropTypes.func,
   onBlur: _react2.default.PropTypes.func,
   onChange: _react2.default.PropTypes.func,
