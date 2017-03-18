@@ -25,6 +25,7 @@ export default {
   queryDelay: React.PropTypes.number,
   googleMaps: React.PropTypes.object,
   onSuggestSelect: React.PropTypes.func,
+  beforeSuggestSelect: React.PropTypes.func,
   onFocus: React.PropTypes.func,
   onBlur: React.PropTypes.func,
   onChange: React.PropTypes.func,
