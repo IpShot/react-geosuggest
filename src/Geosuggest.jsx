@@ -99,9 +99,9 @@ class Geosuggest extends React.Component {
    * On After the input got changed
    */
   onAfterInputChange = () => {
-    if (!this.state.isSuggestsHidden) {
+    // if (!this.state.isSuggestsHidden) {
       this.showSuggests();
-    }
+    // }
     this.props.onChange(this.state.userInput);
   }
 
@@ -338,6 +338,7 @@ class Geosuggest extends React.Component {
     }
 
     this.setState({
+      activeSuggest: null,
       isSuggestsHidden: true,
       userInput: suggest.label
     });
